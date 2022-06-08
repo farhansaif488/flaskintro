@@ -1,0 +1,11 @@
+● app3.service
+   Loaded: loaded (/etc/systemd/system/app3.service; enabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Tue 2022-06-07 20:10:31 UTC; 4min 11s ago
+  Process: 27917 ExecStart=/home/flaskintro/env/bin gunicorn --workers 3 --bind unix:app.sock -m 007 wsgi:app (code=exited, status=203/EXEC)
+ Main PID: 27917 (code=exited, status=203/EXEC)
+
+Jun 07 20:10:31 farhansaif.xyz systemd[1]: Started app3.service.
+Jun 07 20:10:31 farhansaif.xyz systemd[27917]: app3.service: Failed to execute command: Permission denied
+Jun 07 20:10:31 farhansaif.xyz systemd[27917]: app3.service: Failed at step EXEC spawning /home/flaskintro/env/bin: Permission denied
+Jun 07 20:10:31 farhansaif.xyz systemd[1]: app3.service: Main process exited, code=exited, status=203/EXEC
+Jun 07 20:10:31 farhansaif.xyz systemd[1]: app3.service: Failed with result 'exit-code'.

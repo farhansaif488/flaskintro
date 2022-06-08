@@ -1,0 +1,14 @@
+● app.service - Gunicorn insance
+   Loaded: bad-setting (Reason: Unit app.service has a bad unit file setting.)
+   Active: failed (Result: exit-code) since Tue 2022-06-07 18:37:39 UTC; 1h 4min ago
+ Main PID: 20538 (code=exited, status=203/EXEC)
+
+Jun 07 18:37:39 farhansaif.xyz systemd[1]: Started Gunicorn insance.
+Jun 07 18:37:39 farhansaif.xyz systemd[20538]: app.service: Failed to execute command: No such file or directory
+Jun 07 18:37:39 farhansaif.xyz systemd[20538]: app.service: Failed at step EXEC spawning /home/saif/work/flaskintro/env/bin/gunicorn: No such file or directory
+Jun 07 18:37:39 farhansaif.xyz systemd[1]: app.service: Main process exited, code=exited, status=203/EXEC
+Jun 07 18:37:39 farhansaif.xyz systemd[1]: app.service: Failed with result 'exit-code'.
+Jun 07 18:37:46 farhansaif.xyz systemd[1]: /etc/systemd/system/app.service:7: WorkingDirectory= path is not absolute: "/home/saif/work/flaskintro/"
+Jun 07 19:08:11 farhansaif.xyz systemd[1]: /etc/systemd/system/app.service:6: WorkingDirectory= path is not absolute: ~/flaskintro/
+Jun 07 19:08:11 farhansaif.xyz systemd[1]: /etc/systemd/system/app.service:6: WorkingDirectory= path is not absolute: ~/flaskintro/
+Jun 07 19:08:12 farhansaif.xyz systemd[1]: /etc/systemd/system/app.service:6: WorkingDirectory= path is not absolute: ~/flaskintro/
