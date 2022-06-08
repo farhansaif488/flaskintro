@@ -22,4 +22,4 @@ $ python3 -m pip install -r requirements.txt
 $ gunicorn --bind 0.0.0.0:5000 wsgi:app
 ```
 # Running it on background
-A wsgi file with gunicorn and systemd unit it works just fine on my low cost debian vps. (Ik vps is a bit overkill, use heroku or something) If you can use a vps cause its more fun?
+A wsgi file with gunicorn and systemd unit it works just fine on my low cost debian vps. (Ik vps is a bit overkill, use heroku or etc etc) Use a vps cause its more fun?
